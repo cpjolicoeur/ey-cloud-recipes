@@ -198,7 +198,8 @@ else
         variables({
           :app_name => app_name,
           :user => node[:owner_name],
-          :flavor => flavor
+          :flavor => flavor,
+          :framework_env => node[:environment][:framework_env]          
         })
       end
 
